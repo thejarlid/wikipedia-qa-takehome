@@ -12,23 +12,6 @@ The files in `docs/` — `DESIGN.md`, `DECISIONS.md`, and `PROMPT_ENGINEERING.md
 
 ---
 
-## Eval results summary
-
-Eval calibration was applied after v2 (see `docs/PROMPT_ENGINEERING.md`). v4 = v2 prompt on calibrated eval, used to isolate calibration from prompt effects.
-
-| Version | Eval | Composite | Pass Rate | Key changes |
-|---------|------|-----------|-----------|-------------|
-| v0 | original | 81.03 | 69.6% (32/46) | Baseline — 2-sentence prompt |
-| v1 | original | 87.74 | 73.9% (34/46) | Premise check, 4-search cap, grounding, cutoff |
-| v2 | original | 89.35 | 79.5% (35/44) | Multi-hop scaffold, worked examples, query craft table |
-| v4 | calibrated | 91.39 | 77.3% (34/44) | v2 prompt re-run — calibration effect ≈0 |
-| v3 | calibrated | 95.63 | **93.2% (41/44)** | Narrow-exception trap, delete-not-hedge grounding — **best version** |
-| v5 | calibrated | 93.64 | 86.4% (38/44) | Further tightening — regressed bridge questions, confirmed v3 ceiling |
-
-See `docs/PROMPT_ENGINEERING.md` for per-version failure analysis and `results/` for raw eval JSON.
-
----
-
 ## Setup
 
 **1. Run the setup script**
@@ -171,3 +154,20 @@ docs/
 | Custom adversarial | 10 | Out-of-scope, misconceptions, prompt injection, jargon obfuscation |
 
 Every case is labelled `direct` / `strategic` / `out_of_reach` — out-of-reach cases have different success criteria (honest acknowledgment, no hallucination) rather than factual correctness.
+
+---
+
+## Eval results summary
+
+Eval calibration was applied after v2 (see `docs/PROMPT_ENGINEERING.md`). v4 = v2 prompt on calibrated eval, used to isolate calibration from prompt effects.
+
+| Version | Eval | Composite | Pass Rate | Key changes |
+|---------|------|-----------|-----------|-------------|
+| v0 | original | 81.03 | 69.6% (32/46) | Baseline — 2-sentence prompt |
+| v1 | original | 87.74 | 73.9% (34/46) | Premise check, 4-search cap, grounding, cutoff |
+| v2 | original | 89.35 | 79.5% (35/44) | Multi-hop scaffold, worked examples, query craft table |
+| v4 | calibrated | 91.39 | 77.3% (34/44) | v2 prompt re-run — calibration effect ≈0 |
+| v3 | calibrated | 95.63 | **93.2% (41/44)** | Narrow-exception trap, delete-not-hedge grounding — **best version** |
+| v5 | calibrated | 93.64 | 86.4% (38/44) | Further tightening — regressed bridge questions, confirmed v3 ceiling |
+
+See `docs/PROMPT_ENGINEERING.md` for per-version failure analysis and `results/` for raw eval JSON.

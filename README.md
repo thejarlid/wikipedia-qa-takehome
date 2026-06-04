@@ -53,7 +53,7 @@ python main.py "Who invented the telephone?"
 
 ---
 
-## CLI — Ask questions
+## CLI USAGE 
 
 ```bash
 python main.py                                       # interactive REPL

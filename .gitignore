@@ -1,0 +1,26 @@
+# Environment
+.env
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Raw source datasets (large; curated cases are in evals/dataset/*.py)
+evals/dataset/hotpot_dev_fullwiki_v1.json
+evals/dataset/dev-v2.0.json
+
+# Claude
+.claude/

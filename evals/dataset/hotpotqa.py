@@ -1,0 +1,220 @@
+"""HotpotQA test cases — 16 selected examples (bridge + comparison).
+
+Selection criteria:
+- Bridge: hard difficulty, time-stable facts, both supporting articles verified
+  retrievable within the tool's 1000-word window.
+- Comparison: hard difficulty, requires looking up both subjects and comparing.
+- 3 deliberately obscure bridge cases to test gap-handling.
+- Source: hotpot_dev_fullwiki_v1.json (CMU HotpotQA).
+"""
+
+from evals.dataset.schema import TestCase
+
+HOTPOTQA_CASES: list[TestCase] = [
+    # ── Bridge: well-known subjects ──────────────────────────────────────────
+
+    TestCase(
+        id="H-01",
+        question="What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+        category="hotpotqa_bridge",
+        expected_answer="Chief of Protocol",
+        key_facts=["chief of protocol", "protocol"],
+        supporting_articles=["Kiss and Tell (1945 film)", "Shirley Temple"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: Kiss and Tell → Shirley Temple. Hop 2: Shirley Temple → Chief of Protocol.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-02",
+        question="The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+        category="hotpotqa_bridge",
+        expected_answer="from 1986 to 2013",
+        key_facts=["1986", "2013"],
+        supporting_articles=["David Beckham", "Alex Ferguson"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: Beckham article → Alex Ferguson recruited him. Hop 2: Ferguson article → tenure dates.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-03",
+        question="Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+        category="hotpotqa_bridge",
+        expected_answer="Pedro Rodríguez",
+        key_facts=["pedro", "rodríguez", "rodriguez"],
+        supporting_articles=["Sergio Pérez", "Pedro Rodríguez (racing driver)"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: Sergio Pérez → Force India, born 1990, Mexican. Hop 2: Mexican F1 drivers → Pedro Rodríguez.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-05",
+        question="What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+        category="hotpotqa_bridge",
+        expected_answer="World's Best Goalkeeper",
+        key_facts=["world's best goalkeeper", "best goalkeeper"],
+        supporting_articles=["Kasper Schmeichel", "Peter Schmeichel"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: Kasper Schmeichel → father is Peter Schmeichel. Hop 2: Peter Schmeichel → 1992 IFFHS award.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-06",
+        question="Who was the writer of 'These Boots Are Made for Walkin'' who died in 2007?",
+        category="hotpotqa_bridge",
+        expected_answer="Barton Lee Hazlewood",
+        key_facts=["hazlewood", "lee hazlewood"],
+        supporting_articles=["These Boots Are Made for Walkin'", "Lee Hazlewood"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: song article → written by Lee Hazlewood. Hop 2: Hazlewood article → died 2007.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-07",
+        question="Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+        category="hotpotqa_bridge",
+        expected_answer="Henry J. Kaiser",
+        key_facts=["henry j. kaiser", "henry kaiser"],
+        supporting_articles=["Kaiser Ventures", "Henry J. Kaiser"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: Kaiser Ventures → founded by Henry J. Kaiser. Hop 2: Henry J. Kaiser → shipbuilding title.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-08",
+        question="Which French ace pilot flew L'Oiseau Blanc?",
+        category="hotpotqa_bridge",
+        expected_answer="Charles Nungesser",
+        key_facts=["nungesser", "charles"],
+        supporting_articles=["L'Oiseau Blanc", "Charles Nungesser"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: L'Oiseau Blanc → piloted by Nungesser and Coli. Hop 2: Charles Nungesser → French ace pilot.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-09",
+        question="Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+        category="hotpotqa_bridge",
+        expected_answer="2000",
+        key_facts=["2000"],
+        supporting_articles=["Seven Brief Lessons on Physics", "Carlo Rovelli"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: book article → author is Carlo Rovelli. Hop 2: Rovelli article → moved to France in 2000.",
+        source="hotpotqa",
+    ),
+
+    # ── Bridge: R-10 and R-18 (added as replacements/additions) ─────────────
+
+    TestCase(
+        id="H-R10",
+        question="What year did Guns N' Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+        category="hotpotqa_bridge",
+        expected_answer="1999",
+        key_facts=["1999"],
+        supporting_articles=["Oh My God (Guns N' Roses song)", "End of Days (film)"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: GN'R song → promo for End of Days. Hop 2: End of Days → 1999, Schwarzenegger as ex-NYPD.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-R18",
+        question="The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+        category="hotpotqa_bridge",
+        expected_answer="1838",
+        key_facts=["1838"],
+        supporting_articles=["2011–12 VCU Rams men's basketball team", "Virginia Commonwealth University"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Hop 1: VCU Rams article → represents Virginia Commonwealth University. Hop 2: VCU article → founded 1838.",
+        source="hotpotqa",
+    ),
+
+    # ── Bridge: obscure subjects (tests gap-handling) ────────────────────────
+
+    TestCase(
+        id="H-10",
+        question="Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+        category="hotpotqa_bridge",
+        expected_answer="Eenasul Fateh",
+        key_facts=["eenasul fateh", "fateh"],
+        supporting_articles=["Eenasul Fateh", "Management consulting"],
+        requires_multihop=True,
+        retrievability="out_of_reach",
+        adversarial_claim=None,
+        notes="Obscure subject — Wikipedia article for Eenasul Fateh not reliably found by search."
+              "Success criterion: reasonable search attempt + honest acknowledgment of inability to find.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-11",
+        question="The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+        category="hotpotqa_bridge",
+        expected_answer="3,677",
+        key_facts=["3,677", "3677"],
+        supporting_articles=["Lewiston Maineiacs", "Androscoggin Bank Colisée"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Obscure minor-league hockey. Hop 1: Maineiacs → home arena is Androscoggin Bank Colisée. Hop 2: arena → seating capacity.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-12",
+        question="What screenwriter with credits for 'Evolution' co-wrote a film starring Nicolas Cage and Téa Leoni?",
+        category="hotpotqa_bridge",
+        expected_answer="David Weissman",
+        key_facts=["david weissman", "weissman"],
+        supporting_articles=["David Weissman", "The Family Man"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Obscure screenwriter. Hop 1: David Weissman article → credits include Evolution. Hop 2: The Family Man → Cage and Leoni.",
+        source="hotpotqa",
+    ),
+
+    # ── Comparison ───────────────────────────────────────────────────────────
+
+    TestCase(
+        id="H-13",
+        question="Were Scott Derrickson and Ed Wood of the same nationality?",
+        category="hotpotqa_comparison",
+        expected_answer="yes",
+        key_facts=["yes", "american", "both american", "united states"],
+        supporting_articles=["Scott Derrickson", "Ed Wood"],
+        requires_multihop=True,
+        retrievability="direct",
+        notes="Comparison: both are American. Agent must look up both and confirm shared nationality.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-14",
+        question="Are Giuseppe Verdi and Ambroise Thomas both opera composers?",
+        category="hotpotqa_comparison",
+        expected_answer="yes",
+        key_facts=["yes", "opera", "composer"],
+        supporting_articles=["Giuseppe Verdi", "Ambroise Thomas"],
+        requires_multihop=True,
+        retrievability="direct",
+        notes="Comparison: both are opera composers, confirmed in article intros.",
+        source="hotpotqa",
+    ),
+    TestCase(
+        id="H-15",
+        question="Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+        category="hotpotqa_comparison",
+        expected_answer="no",
+        key_facts=["no", "australian", "australia"],
+        supporting_articles=["Freakonomics (film)", "In the Realm of the Hackers"],
+        requires_multihop=True,
+        retrievability="strategic",
+        notes="Comparison: Freakonomics is American, In the Realm of the Hackers is Australian. "
+              "Agent must check both and notice the discrepancy.",
+        source="hotpotqa",
+    ),
+]

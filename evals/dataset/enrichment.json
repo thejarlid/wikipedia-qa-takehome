@@ -1,0 +1,509 @@
+{
+  "H-01": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Kiss and Tell (1945 film)",
+      "Shirley Temple"
+    ],
+    "key_facts_checked": [
+      "chief of protocol",
+      "protocol"
+    ]
+  },
+  "H-02": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "David Beckham",
+      "Alex Ferguson"
+    ],
+    "key_facts_checked": [
+      "1986",
+      "2013"
+    ]
+  },
+  "H-03": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Sergio P\u00e9rez",
+      "Pedro Rodr\u00edguez (racing driver)"
+    ],
+    "key_facts_checked": [
+      "pedro",
+      "rodr\u00edguez",
+      "rodriguez"
+    ]
+  },
+  "H-05": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Kasper Schmeichel",
+      "Peter Schmeichel"
+    ],
+    "key_facts_checked": [
+      "world's best goalkeeper",
+      "best goalkeeper"
+    ]
+  },
+  "H-06": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "These Boots Are Made for Walkin'",
+      "Lee Hazlewood"
+    ],
+    "key_facts_checked": [
+      "hazlewood",
+      "lee hazlewood"
+    ]
+  },
+  "H-07": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Kaiser Ventures",
+      "Henry J. Kaiser"
+    ],
+    "key_facts_checked": [
+      "henry j. kaiser",
+      "henry kaiser"
+    ]
+  },
+  "H-08": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "L'Oiseau Blanc",
+      "Charles Nungesser"
+    ],
+    "key_facts_checked": [
+      "nungesser",
+      "charles"
+    ]
+  },
+  "H-09": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Seven Brief Lessons on Physics",
+      "Carlo Rovelli"
+    ],
+    "key_facts_checked": [
+      "2000"
+    ]
+  },
+  "H-R10": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Oh My God (Guns N' Roses song)",
+      "End of Days (film)"
+    ],
+    "key_facts_checked": [
+      "1999"
+    ]
+  },
+  "H-R18": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "2011\u201312 VCU Rams men's basketball team",
+      "Virginia Commonwealth University"
+    ],
+    "key_facts_checked": [
+      "1838"
+    ]
+  },
+  "H-10": {
+    "fact_in_retrieved_window": false,
+    "fact_in_full_article": false,
+    "supporting_articles_checked": [
+      "Eenasul Fateh",
+      "Management consulting"
+    ],
+    "key_facts_checked": [
+      "eenasul fateh",
+      "fateh"
+    ]
+  },
+  "H-11": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Lewiston Maineiacs",
+      "Androscoggin Bank Colis\u00e9e"
+    ],
+    "key_facts_checked": [
+      "3,677",
+      "3677"
+    ]
+  },
+  "H-12": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "David Weissman",
+      "The Family Man"
+    ],
+    "key_facts_checked": [
+      "david weissman",
+      "weissman"
+    ]
+  },
+  "H-13": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Scott Derrickson",
+      "Ed Wood"
+    ],
+    "key_facts_checked": [
+      "yes",
+      "american",
+      "both american",
+      "united states"
+    ]
+  },
+  "H-14": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Giuseppe Verdi",
+      "Ambroise Thomas"
+    ],
+    "key_facts_checked": [
+      "yes",
+      "opera",
+      "composer"
+    ]
+  },
+  "H-15": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Freakonomics (film)",
+      "In the Realm of the Hackers"
+    ],
+    "key_facts_checked": [
+      "no",
+      "australian",
+      "australia"
+    ]
+  },
+  "NQ-01": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Forbidden City"
+    ],
+    "key_facts_checked": [
+      "zhu di",
+      "yongle"
+    ]
+  },
+  "NQ-02": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Bartolomeu Dias"
+    ],
+    "key_facts_checked": [
+      "bartolomeu dias",
+      "dias"
+    ]
+  },
+  "NQ-03": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Aorta"
+    ],
+    "key_facts_checked": [
+      "aorta"
+    ]
+  },
+  "NQ-05": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Sugar, Sugar"
+    ],
+    "key_facts_checked": [
+      "archies",
+      "the archies"
+    ]
+  },
+  "NQ-07": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "U.S. Route 66"
+    ],
+    "key_facts_checked": [
+      "santa monica"
+    ]
+  },
+  "NQ-08": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "James VI and I"
+    ],
+    "key_facts_checked": [
+      "james i",
+      "james the first",
+      "james vi"
+    ]
+  },
+  "NQ-09": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "The Hunger Games (novel)"
+    ],
+    "key_facts_checked": [
+      "2008",
+      "september"
+    ]
+  },
+  "NQ-12": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "IEEE 802.11a-1999"
+    ],
+    "key_facts_checked": [
+      "54",
+      "mbit"
+    ]
+  },
+  "NQ-13": {
+    "fact_in_retrieved_window": false,
+    "fact_in_full_article": false,
+    "supporting_articles_checked": [
+      "Papa's Got a Brand New Bag"
+    ],
+    "key_facts_checked": [
+      "james brown"
+    ]
+  },
+  "NQ-14": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Oligodynamic effect"
+    ],
+    "key_facts_checked": [
+      "biocidal",
+      "metals",
+      "oligodynamic"
+    ]
+  },
+  "SQ-A": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Oxygen"
+    ],
+    "key_facts_checked": [
+      "third",
+      "third-most abundant",
+      "third most abundant"
+    ]
+  },
+  "SQ-B": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Oxygen"
+    ],
+    "key_facts_checked": [
+      "20",
+      "20.9",
+      "21"
+    ]
+  },
+  "SQ-C": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Immune system"
+    ],
+    "key_facts_checked": [
+      "disease",
+      "protects against disease"
+    ]
+  },
+  "SQ-D": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Immune system"
+    ],
+    "key_facts_checked": [
+      "distinguish",
+      "pathogens",
+      "able to distinguish"
+    ]
+  },
+  "SQ-E": {
+    "fact_in_retrieved_window": false,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Warsaw"
+    ],
+    "key_facts_checked": [
+      "32nd",
+      "32"
+    ]
+  },
+  "SQ-F": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Steam engine"
+    ],
+    "key_facts_checked": [
+      "rankine",
+      "steam",
+      "steam engine"
+    ]
+  },
+  "SQ-G": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Normans"
+    ],
+    "key_facts_checked": [
+      "normandy",
+      "region in france",
+      "region of france",
+      "sovereign"
+    ]
+  },
+  "SQ-H": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Battle of Hastings"
+    ],
+    "key_facts_checked": [
+      "1066",
+      "11th century"
+    ]
+  },
+  "SQ-I": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Treaty of Saint-Clair-sur-Epte"
+    ],
+    "key_facts_checked": [
+      "911",
+      "10th century"
+    ]
+  },
+  "SQ-J": {
+    "fact_in_retrieved_window": false,
+    "fact_in_full_article": false,
+    "supporting_articles_checked": [
+      "Bohemond I of Antioch"
+    ],
+    "key_facts_checked": [
+      "nephew",
+      "bohemond",
+      "tancred is"
+    ]
+  },
+  "CA-04": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Albert Einstein"
+    ],
+    "key_facts_checked": [
+      "misconception",
+      "myth",
+      "excelled",
+      "did not fail",
+      "good at math"
+    ]
+  },
+  "CA-05": {
+    "fact_in_retrieved_window": false,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Great Wall of China"
+    ],
+    "key_facts_checked": [
+      "not visible",
+      "myth",
+      "cannot be seen",
+      "naked eye"
+    ]
+  },
+  "CA-06": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Sense"
+    ],
+    "key_facts_checked": [
+      "more than five",
+      "more than 5",
+      "proprioception",
+      "balance",
+      "nine",
+      "ten",
+      "twenty"
+    ]
+  },
+  "CA-07": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Mercury (planet)",
+      "Mercury (element)",
+      "Mercury (mythology)"
+    ],
+    "key_facts_checked": [
+      "mercury"
+    ]
+  },
+  "CA-08": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Berlin Wall"
+    ],
+    "key_facts_checked": [
+      "1961"
+    ]
+  },
+  "CA-09": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Fall of the Western Roman Empire"
+    ],
+    "key_facts_checked": [
+      "476",
+      "476 ad",
+      "476 ce"
+    ]
+  },
+  "CA-10": {
+    "fact_in_retrieved_window": true,
+    "fact_in_full_article": true,
+    "supporting_articles_checked": [
+      "Canberra"
+    ],
+    "key_facts_checked": [
+      "canberra"
+    ]
+  }
+}
